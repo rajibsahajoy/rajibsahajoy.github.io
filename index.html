@@ -1,101 +1,427 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f8faf9">
-<meta name="description" content="Rajib Saha — Electrical & Automation Engineer in Oslo, Norway. SCADA/RTU, electrical hardware R&D, smart grids and industrial networks.">
-<meta property="og:title" content="Rajib Saha | Electrical & Automation Engineer">
-<meta property="og:description" content="Automation, electrical engineering and smart energy systems — personal portfolio of Rajib Saha.">
-<meta property="og:type" content="website">
-<title>Rajib Saha — Electrical & Automation Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rajib Saha - Electrical and Automation Engineer based in Oslo, Norway.">
+<title>Rajib Saha | Electrical & Automation Engineer</title>
 <style>
-:root{--navy:#102b3a;--navy2:#244457;--green:#167a61;--mint:#e6f5ef;--ink:#213442;--muted:#5e7280;--bg:#f8faf9;--white:#fff;--line:#dfe8e5;--max:1080px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offset:4px}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}.skip{position:absolute;top:-100px;left:15px;padding:10px;background:white;z-index:999}.skip:focus{top:10px}.header{position:sticky;top:0;z-index:20;background:rgba(248,250,249,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{font-weight:850;font-size:1.3rem;color:var(--navy);letter-spacing:-.05em}.brand span{color:var(--green)}.links{display:flex;align-items:center;gap:25px}.links a{font-size:.88rem;font-weight:650;color:var(--navy2)}.links a:hover,.links a:focus-visible{color:var(--green)}.language{border:1px solid #cbdad4;border-radius:9px;padding:8px 11px;background:#fff;color:var(--navy);font-weight:750;cursor:pointer}.menu{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:7px 12px;color:var(--navy);cursor:pointer}.hero{padding:100px 0 110px;background:radial-gradient(circle at 85% 25%,#e5f6ee 0,transparent 39%),linear-gradient(180deg,#fff,#f8faf9)}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center}.kicker{font-size:.8rem;text-transform:uppercase;letter-spacing:.17em;font-weight:800;color:var(--green)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3.4rem,8vw,6.2rem);line-height:1.04;letter-spacing:-.075em;color:var(--navy);margin:18px 0 20px}h1 span{color:var(--green)}.role{font-size:clamp(1.2rem,2.5vw,1.65rem);font-weight:650;color:var(--navy2);line-height:1.4;margin-bottom:19px}.intro{max-width:610px;font-size:1.06rem;color:var(--muted);margin-bottom:29px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:47px;padding:10px 19px;border-radius:9px;border:1px solid var(--green);font-weight:750;font-size:.91rem;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--green);color:white}.primary:hover{background:#0d624c}.secondary{background:#fff;color:var(--green)}.secondary:hover{background:var(--mint)}.cv-note{font-size:.77rem;color:var(--muted);margin:12px 0 0}.photo-shell{width:min(100%,315px);aspect-ratio:4/5;margin-inline:auto;border-radius:22px;background:linear-gradient(155deg,#e4f1eb,#d0e5dc);padding:13px;box-shadow:24px 24px 0 #eaf3ef}.portrait{width:100%;height:100%;border:2px dashed #8ab8a6;border-radius:14px;display:grid;place-items:center;overflow:hidden;background:#f3f9f6}.portrait img{width:100%;height:100%;object-fit:cover;display:block}.photo-placeholder{text-align:center;color:var(--green);padding:22px}.photo-placeholder svg{width:100px;height:100px;display:block;margin:0 auto 12px}.photo-placeholder small{display:block;font-weight:650;font-size:.85rem}.section{padding:85px 0}.section.white{background:white}.heading{max-width:730px;margin-bottom:34px}.heading h2{font-size:clamp(1.8rem,4vw,2.55rem);letter-spacing:-.045em;line-height:1.2;color:var(--navy);margin:10px 0}.heading p{color:var(--muted);margin:0}.about-text{max-width:850px;font-size:1.04rem;color:var(--muted)}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}.chip{padding:6px 12px;border-radius:100px;border:1px solid #cfe2d8;color:#24634f;background:#f3faf6;font-size:.81rem;font-weight:650}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{border:1px solid var(--line);border-radius:15px;padding:26px;background:#fff;box-shadow:0 7px 22px rgba(12,51,39,.025)}.icon{width:45px;height:45px;display:grid;place-items:center;border-radius:12px;background:var(--mint);color:var(--green);font-size:1.3rem;margin-bottom:17px}.card h3{font-size:1.07rem;line-height:1.35;color:var(--navy);margin-bottom:10px}.card p{color:var(--muted);font-size:.91rem;margin-bottom:0}.timeline{display:grid;gap:13px}.job{display:grid;grid-template-columns:215px 1fr;gap:25px;padding:24px 26px;border:1px solid var(--line);border-radius:13px;background:#fff}.job aside{font-size:.85rem;font-weight:700;color:var(--green)}.job h3{font-size:1.08rem;color:var(--navy);margin:0 0 4px}.job .org{font-weight:700;color:var(--navy2);font-size:.91rem;margin-bottom:8px}.job p{font-size:.91rem;color:var(--muted);margin:0}.education{display:grid;grid-template-columns:1fr 1fr;gap:16px}.edu{border:1px solid var(--line);background:white;border-radius:13px;padding:23px}.edu h3{font-size:1.06rem;line-height:1.45;color:var(--navy);margin-bottom:7px}.edu p{color:var(--muted);font-size:.9rem;margin:0}.subheading{font-size:1.07rem;color:var(--navy);margin:30px 0 12px}.certs{display:flex;flex-wrap:wrap;gap:9px}.cert{background:#edf6f1;border:1px solid #d3e8db;color:#245d4a;border-radius:8px;padding:9px 13px;font-size:.87rem;font-weight:650}.contact{background:var(--navy);color:#dbe9e5;padding:80px 0;text-align:center}.contact h2{color:white;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.05em;margin:0 0 12px}.contact p{max-width:590px;margin:0 auto 25px;color:#c6d7d5}.contact .btn{background:#fff;color:var(--navy);border-color:#fff}.contact .btn:hover{background:var(--mint)}.contact-links{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:23px;font-size:.9rem}.contact-links a:hover{text-decoration:underline}.footer{padding:23px 0;font-size:.82rem;color:var(--muted);text-align:center}.footer p{margin:0}#about,#skills,#experience,#education,#contact{scroll-margin-top:80px}
-@media(max-width:850px){.hero-grid{gap:25px}.job{grid-template-columns:150px 1fr}.cards{grid-template-columns:1fr 1fr}.cards .card:last-child{grid-column:1/-1}}@media(max-width:650px){.wrap{width:min(calc(100% - 32px),var(--max))}.nav{min-height:66px}.menu{display:block}.links{display:none;position:absolute;top:66px;left:0;right:0;padding:16px 22px 22px;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:15px}.links.open{display:flex}.nav-right{display:flex;align-items:center;gap:9px}.hero{padding:55px 0 70px}.hero-grid{grid-template-columns:1fr;gap:38px}.hero h1{font-size:clamp(3.2rem,14vw,5rem)}.photo-shell{width:230px;order:-1;margin-left:10px;box-shadow:13px 13px 0 #eaf3ef}.section{padding:62px 0}.cards,.education{grid-template-columns:1fr}.cards .card:last-child{grid-column:auto}.job{grid-template-columns:1fr;gap:8px;padding:21px}.actions{flex-direction:column;align-items:stretch}.actions .btn{width:100%}.contact{padding:65px 0}.contact-links{gap:13px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
-
-/* 2026 visual refresh: brand-inspired typographic marks (not official logo assets) */
-:root{--navy:#102b3a;--green:#137b64;--bg:#f6faf8;--line:#e0ebe6;--max:1120px}
-body{background:var(--bg);-webkit-font-smoothing:antialiased}
-::selection{background:#b7e7d6;color:#102b3a}
-.reading-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#0d846a,#7bcdb0);z-index:99;transition:width .08s linear}
-.header{box-shadow:0 3px 24px rgba(17,54,45,.035)}
-.brand{letter-spacing:-.06em;font-size:1.48rem}
-.links a{position:relative;transition:color .2s ease}.links a::after{content:"";position:absolute;left:0;right:100%;height:2px;bottom:-8px;background:var(--green);transition:right .25s}.links a:hover::after,.links a.active::after{right:0}.links a.active{color:var(--green)}
-.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 72% 27%,#dff3e9 0,transparent 35%),linear-gradient(145deg,#fff 15%,#f2f9f6 100%)}
-.hero .wrap{position:relative;z-index:1}.hero-orb{position:absolute;pointer-events:none;border-radius:50%;filter:blur(1px);border:1px solid rgba(27,128,101,.13)}.orb-one{width:520px;height:520px;right:-240px;top:-210px;box-shadow:0 0 0 55px rgba(33,143,107,.025),0 0 0 115px rgba(33,143,107,.018)}.orb-two{width:250px;height:250px;left:-170px;bottom:-120px;background:rgba(101,204,164,.055)}
-.kicker{display:inline-flex;align-items:center;gap:9px}.kicker:before{content:"";width:7px;height:7px;background:#16a17c;border-radius:50%;box-shadow:0 0 0 5px #e0f4eb}
-h1{letter-spacing:-.078em}h1 span{background:linear-gradient(115deg,#138369,#2ca98a);background-clip:text;-webkit-background-clip:text;color:transparent}
-.photo-shell{position:relative;transform:rotate(1.5deg);transition:transform .45s ease,box-shadow .45s ease;box-shadow:22px 24px 0 #e3f0e9,0 18px 55px rgba(13,64,48,.13)}.photo-shell:hover{transform:rotate(0deg) translateY(-5px)}.portrait{border:0}.portrait img{object-position:center 22%}
-.section{position:relative}.heading h2{letter-spacing:-.055em}.heading{margin-bottom:38px}
-.card,.edu,.job{box-shadow:0 5px 22px rgba(10,58,43,.028);transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
-.card:hover,.edu:hover,.job:hover{transform:translateY(-4px);box-shadow:0 17px 42px rgba(10,58,43,.085);border-color:#b8dacb}
-.card{border-radius:18px}.icon{border-radius:14px}.chip{transition:transform .2s ease,background .2s ease}.chip:hover{transform:translateY(-2px);background:#e5f6ee}
-.timeline{position:relative;gap:18px;padding-left:28px}.timeline:before{content:"";position:absolute;top:22px;bottom:22px;left:9px;width:2px;background:linear-gradient(#1b9b7c,#dcece5)}
-.job{position:relative;border-radius:17px;grid-template-columns:195px 1fr;gap:25px;padding:26px 27px}
-.job:before{content:"";position:absolute;left:-26px;top:34px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid #199b7a;box-shadow:0 0 0 5px #e8f5ef}
-.job:first-child{border-color:#b8dccc;background:linear-gradient(110deg,#fff,#f6fcf9)}
-.job:first-child:before{background:#149b77;box-shadow:0 0 0 5px #e0f5e9,0 0 0 9px rgba(32,163,121,.1)}
-.company{display:flex;align-items:center;gap:12px;margin:6px 0 12px}.company .org{margin:0;line-height:1.45}
-.company-mark{flex:0 0 auto;min-width:67px;max-width:122px;min-height:37px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #dbe7e2;border-radius:8px;background:#f7faf9;color:#244457;padding:5px 10px;font-size:.7rem;font-weight:900;letter-spacing:-.03em;line-height:1;text-align:center}
-.company-mark.abb{color:#e32730;font-size:1.18rem;letter-spacing:-.08em;background:#fff}.company-mark.ceragon{color:#2462a5;font-size:.78rem}.company-mark.bnp{background:#e9f7ee;color:#13865a;font-size:.61rem}.company-mark.blue{color:#1684a8}.company-mark.aa{color:#173d61;font-size:1.05rem}.company-mark.ilabs{color:#6b55aa;font-size:.86rem}.company-mark.edotco{color:#d45729;font-size:.86rem}
-.to-top{position:fixed;right:22px;bottom:22px;width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:var(--navy);color:#fff;box-shadow:0 9px 25px rgba(14,44,58,.22);z-index:10;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}.to-top.show{opacity:1;visibility:visible;transform:translateY(0)}.to-top:hover{background:var(--green)}
-@media(prefers-reduced-motion:no-preference){.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:translateY(0)}.job.reveal.visible:hover,.card.reveal.visible:hover,.edu.reveal.visible:hover{transform:translateY(-4px)}}
-@media(max-width:850px){.job{grid-template-columns:150px 1fr;gap:18px}}
-@media(max-width:650px){.timeline{padding-left:21px}.timeline:before{left:5px}.job{grid-template-columns:1fr;gap:6px;padding:21px}.job:before{left:-22px;top:26px;width:10px;height:10px}.company{gap:10px}.company-mark{min-width:58px}.orb-one{right:-390px}.to-top{right:14px;bottom:14px}}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}}
+:root {
+  --navy:#10233f;
+  --green:#12a67a;
+  --light:#f3f7fa;
+  --muted:#607083;
+  --line:#dce6ed;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--navy);background:var(--white);line-height:1.65}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+.container{max-width:1140px;margin:auto;padding:0 24px}
+header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line);z-index:100}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:74px;gap:16px}
+.brand{font-size:1.25rem;font-weight:850;letter-spacing:-.6px}
+.brand span,.accent{color:var(--green)}
+.links{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.links a{font-size:.9rem;font-weight:650}
+.links a:hover{color:var(--green)}
+.lang{background:var(--navy);color:white;border:0;border-radius:9px;padding:9px 13px}
+.menu{display:none;border:0;background:transparent;font-size:1.5rem}
+.hero{background:linear-gradient(135deg,#eff8f7 0%,#fff 55%,#eaf2fc 100%);padding:90px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.3fr .8fr;gap:70px;align-items:center}
+.eyebrow{color:#087f60;font-weight:750;text-transform:uppercase;letter-spacing:2px;font-size:.8rem}
+h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.07;letter-spacing:-2.5px;margin:15px 0}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);letter-spacing:-1px;margin:0 0 16px}
+h3{margin:0 0 8px;font-size:1.12rem}
+.lead{font-size:1.12rem;color:#50647a;max-width:620px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:11px;font-weight:750;transition:.25s;border:1px solid transparent}
+.primary{background:var(--green);color:#fff}
+.primary:hover{background:#087e5d;transform:translateY(-2px)}
+.secondary{border-color:#bdcbd7;background:white}
+.secondary:hover{border-color:var(--green);transform:translateY(-2px)}
+.portrait{padding:10px;background:white;border-radius:30px;box-shadow:0 25px 70px #10233f20;transform:rotate(2deg)}
+.portrait img{width:100%;aspect-ratio:4/4.5;object-fit:cover;display:block;border-radius:22px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:32px}
+.stat strong{display:block;font-size:1.25rem}
+.stat small{color:var(--muted)}
+section{padding:85px 0;scroll-margin-top:75px}
+.alt{background:var(--light)}
+.section-head{margin-bottom:35px}
+.section-head p{color:var(--muted);max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:17px;padding:24px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 15px 40px #10233f12}
+.card p{color:var(--muted);margin:7px 0}
+.pill{display:inline-block;background:#e3f7f0;color:#087f60;border-radius:99px;padding:5px 12px;font-size:.8rem;font-weight:750}
+.skills{display:flex;gap:10px;flex-wrap:wrap}
+.skill{border:1px solid #d5e4e9;background:#fff;padding:10px 15px;border-radius:10px;font-weight:650;font-size:.92rem}
+.timeline{position:relative;margin-left:12px;border-left:2px solid #d3e6df;padding-left:28px}
+.job{position:relative;margin-bottom:20px}
+.job:before{content:"";position:absolute;left:-37px;top:30px;width:14px;height:14px;border-radius:50%;background:var(--green);border:3px solid white;box-shadow:0 0 0 2px var(--green)}
+.job-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{width:112px;height:55px;object-fit:contain;background:#fff;padding:8px;border:1px solid var(--line);border-radius:10px}
+.logo-text{display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:850;text-align:center}
+.date{font-size:.8rem;color:#087f60;font-weight:800;letter-spacing:.4px}
+.company{font-weight:750;color:#41546b}
+.job ul{margin:12px 0 0;padding-left:19px;color:#516176}
+.job li{margin:6px 0}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+details{margin-top:15px;border-top:1px solid var(--line);padding-top:12px}
+summary{cursor:pointer;color:#087f60;font-weight:750}
+details p{margin-top:10px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.filter{border:1px solid var(--line);background:white;border-radius:30px;padding:9px 17px}
+.filter.active{background:var(--navy);color:white}
+.training-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.training[hidden]{display:none}
+.contact{background:var(--navy);color:white;text-align:center}
+.contact p{color:#c3d0df}
+.contact .secondary{color:var(--navy)}
+footer{text-align:center;padding:24px;background:#091a30;color:#cbd5e1;font-size:.85rem}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s,transform .65s}
+.reveal.visible{opacity:1;transform:translateY(0)}
+#top{position:fixed;right:20px;bottom:20px;border:0;background:var(--green);color:white;padding:11px 16px;border-radius:12px;display:none;z-index:50}
+@media(max-width:800px){
+  .menu{display:block}
+  .links{display:none;position:absolute;top:73px;left:0;right:0;background:white;padding:22px;box-shadow:0 12px 25px #10233f18;flex-direction:column;align-items:stretch}
+  .links.open{display:flex}
+  .hero-grid,.edu-grid{grid-template-columns:1fr}
+  .hero{padding:55px 0}
+  .portrait{max-width:360px;margin:auto}
+  .grid,.training-grid{grid-template-columns:1fr}
+  section{padding:60px 0}
+  .stats{gap:20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+  .reveal{opacity:1;transform:none}
+}
 </style>
 </head>
-<body><div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
-<a class="skip" href="#main">Skip to content</a>
-<header class="header"><div class="wrap nav"><a class="brand" href="#home" aria-label="Rajib Saha home">Rajib<span>.</span></a><nav class="links" id="navigation" aria-label="Main navigation"><a href="#about" data-i18n="navAbout">About</a><a href="#skills" data-i18n="navSkills">Expertise</a><a href="#experience" data-i18n="navExperience">Experience</a><a href="#education" data-i18n="navEducation">Education</a><a href="#contact" data-i18n="navContact">Contact</a></nav><div class="nav-right"><button class="language" id="languageButton" type="button" aria-label="Switch language to Norwegian">NO</button><button class="menu" id="menuButton" type="button" aria-label="Open menu" aria-controls="navigation" aria-expanded="false">☰</button></div></div></header>
-<main id="main">
-<section class="hero" id="home"><div class="hero-orb orb-one" aria-hidden="true"></div><div class="hero-orb orb-two" aria-hidden="true"></div><div class="wrap hero-grid"><div><div class="kicker" data-i18n="location">BASED IN OSLO, NORWAY</div><h1>Rajib <span>Saha.</span></h1><p class="role" data-i18n="role">Electrical & Automation Engineer</p><p class="intro" data-i18n="intro">I work at the intersection of electrical engineering, industrial automation and intelligent energy systems — from SCADA/RTU integration to hardware validation and industrial networks.</p><div class="actions"><a class="btn primary" href="#experience" data-i18n="viewWork">Explore my experience ↗</a><a class="btn secondary" href="mailto:joyrajibsaha98@gmail.com?subject=CV%20request%20-%20Rajib%20Saha" data-i18n="requestCV">Request my CV ↗</a></div><p class="cv-note" data-i18n="cvNote">CV available on request. A public-safe downloadable version can be added later.</p></div><div class="photo-shell"><div class="portrait"><img src="rajib-photo.jpg" alt="Rajib Saha, Electrical and Automation Engineer" width="600" height="750"></div></div></div></section>
-<section class="section white" id="about"><div class="wrap"><div class="heading"><div class="kicker" data-i18n="aboutLabel">A LITTLE ABOUT ME</div><h2 data-i18n="aboutTitle">Practical engineering, connected thinking.</h2></div><p class="about-text" data-i18n="aboutBody">I'm an electrical and automation engineer with experience across power-sector automation, electronic hardware development, network infrastructure and green energy. I enjoy testing complex systems, understanding how they work, and turning technical requirements into reliable solutions. I hold an MSc in Green Energy Technology with a Smart Grid focus and a BSc in Electrical and Electronic Engineering.</p><div class="chips"><span class="chip">SCADA / RTU</span><span class="chip" data-i18n="chipHardware">Hardware R&D</span><span class="chip">Smart Grid</span><span class="chip" data-i18n="chipNetworks">Industrial Networks</span><span class="chip" data-i18n="chipTesting">Testing & Validation</span></div></div></section>
-<section class="section" id="skills"><div class="wrap"><div class="heading"><div class="kicker" data-i18n="skillsLabel">WHAT I WORK WITH</div><h2 data-i18n="skillsTitle">Technical expertise</h2><p data-i18n="skillsLead">Three areas that connect my engineering experience.</p></div><div class="cards"><article class="card"><div class="icon" aria-hidden="true">⚙</div><h3 data-i18n="skill1Title">Automation & Control</h3><p data-i18n="skill1Body">SCADA/RTU configuration, PLC-based control, signal mapping, I/O testing, commissioning and industrial communication (IEC 60870-5-104, Modbus, TCP/IP).</p></article><article class="card"><div class="icon" aria-hidden="true">⌁</div><h3 data-i18n="skill2Title">Electrical & Hardware R&D</h3><p data-i18n="skill2Body">AutoCAD Electrical, schematics, instrumentation, hardware testing, technical documentation, BOM/PDM, ECO and ATEX/Ex-related work.</p></article><article class="card"><div class="icon" aria-hidden="true">▦</div><h3 data-i18n="skill3Title">Data & Networks</h3><p data-i18n="skill3Body">Python, SQL, Power BI, routers and switches, UTP/fiber infrastructure, diagnostics, Wireshark and technical troubleshooting.</p></article></div></div></section>
-<section class="section white" id="experience"><div class="wrap"><div class="heading"><div class="kicker" data-i18n="experienceLabel">MY PROFESSIONAL BACKGROUND</div><h2 data-i18n="experienceTitle">Professional experience</h2><p data-i18n="experienceLead">Currently working at Netcontrol AS (part of ABB), since June 2026.</p></div><div class="timeline">
-<article class="job"><aside data-i18n="job1Area">June 2026 – Present · Oslo</aside><div><h3 data-i18n="job1Title">Automation Engineer</h3><div class="company"><span class="company-mark abb" aria-hidden="true">ABB</span><p class="org">Netcontrol AS (part of ABB)</p></div><p data-i18n="job1Body">SCADA/RTU configuration, signal verification, I/O testing, technical documentation and commissioning support for energy and industrial applications.</p></div></article>
-<article class="job"><aside data-i18n="job2Area">Oct 2025 – May 2026 · Bergen</aside><div><h3 data-i18n="job2Title">R&amp;D Engineer — Hardware Development</h3><div class="company"><span class="company-mark ceragon" aria-hidden="true">ceragon</span><p class="org">Ceragon Networks AS</p></div><p data-i18n="job2Body">Electrical drawings in AutoCAD Electrical, hardware validation, fault finding, BOM/PDM updates, engineering change control and ATEX/Ex documentation.</p></div></article>
-<article class="job"><aside data-i18n="job3Area">Jun 2025 – Sep 2025 · Oslo</aside><div><h3 data-i18n="job3Title">Data Center &amp; IT Infrastructure Engineer</h3><div class="company"><span class="company-mark bnp" aria-hidden="true">BNP PARIBAS</span><p class="org">BNP Paribas</p></div><p data-i18n="job3Body">Installed and tested low-voltage electrical systems and communication infrastructure in mission-critical environments. Performed diagnostics, testing and compliance checks to support reliable and safe system operation.</p></div></article>
-<article class="job"><aside data-i18n="job5Area">Jan 2025 – May 2025</aside><div><h3 data-i18n="job5Title">Service Engineer (Part Time)</h3><div class="company"><span class="company-mark blue" aria-hidden="true">bluewireless</span><p class="org">Bluewireless (on behalf of ITOX Ltd)</p></div><p data-i18n="job5Body">Installed and tested communication systems, including power configuration and equipment integration.</p></div></article>
-<article class="job"><aside data-i18n="job6Area">Nov 2024 – Feb 2025 · Oslo</aside><div><h3 data-i18n="job6Title">Network &amp; Field Engineer (Part Time)</h3><div class="company"><span class="company-mark aa" aria-hidden="true">AA</span><p class="org">AA Consultant Group AS</p></div><p data-i18n="job6Body">Performed on-site installation, testing, troubleshooting and technical verification of low-voltage systems.</p></div></article>
-<article class="job"><aside data-i18n="job4Area">Apr 2024 – Dec 2024 · Oslo</aside><div><h3 data-i18n="job4Title">Green Energy Intern</h3><div class="company"><span class="company-mark ilabs" aria-hidden="true">i-labs</span><p class="org">I-Labs AS, Start Growth Hub</p></div><p data-i18n="job4Body">Developed and tested IoT-based sensor and instrumentation systems, supporting prototyping and system integration.</p></div></article>
-<article class="job"><aside data-i18n="job7Area">Jun 2021 – Jul 2022 · Bangladesh</aside><div><h3 data-i18n="job7Title">Quality Assurance Engineer</h3><div class="company"><span class="company-mark edotco" aria-hidden="true">edotco</span><p class="org">Edotco Group (Axiata Group Berhad)</p></div><p data-i18n="job7Body">Performed field verification of signal strength, grounding and power quality and participated in site audits. Analysed site KPIs and technical findings to support uptime, SLA performance and safety compliance.</p></div></article>
-</div></div></section>
-<section class="section" id="education"><div class="wrap"><div class="heading"><div class="kicker" data-i18n="educationLabel">EDUCATION & TRAINING</div><h2 data-i18n="educationTitle">Academic foundation</h2></div><div class="education"><article class="edu"><h3 data-i18n="degree1">MSc — Green Energy Technology (Smart Grid)</h3><p data-i18n="school1">Østfold University College, Norway · Awarded December 2025</p></article><article class="edu"><h3 data-i18n="degree2">BSc — Electrical and Electronic Engineering</h3><p data-i18n="school2">Eastern University, Bangladesh</p></article></div><h3 class="subheading" data-i18n="trainingTitle">Selected training</h3><div class="certs"><span class="cert" data-i18n="training1">Trainor — Ex Basic Course</span><span class="cert" data-i18n="training4">Trainor — Access to electrical installations (valid until Nov 2026)</span><span class="cert" data-i18n="training2">Trainor — Offshore electrical installations</span><span class="cert">CompTIA A+ Core 1</span><span class="cert" data-i18n="training3">Ubuntu Linux (Canonical)</span></div></div></section>
-<section class="contact" id="contact"><div class="wrap"><h2 data-i18n="contactTitle">Let's connect.</h2><p data-i18n="contactBody">Interested in automation, electrical engineering or smart energy systems? Feel free to get in touch.</p><a class="btn" href="mailto:joyrajibsaha98@gmail.com" data-i18n="emailAction">Send me an email ↗</a><div class="contact-links"><a href="mailto:joyrajibsaha98@gmail.com">joyrajibsaha98@gmail.com</a><a href="https://www.linkedin.com/in/rajib-saha1998/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span>Oslo, Norway</span></div></div></section>
-</main>
-<footer class="footer"><div class="wrap"><p>© <span id="year"></span> Rajib Saha · <span data-i18n="footer">Made with care, hosted for free.</span></p></div></footer><a href="#home" class="to-top" id="toTop" aria-label="Back to top" title="Back to top">↑</a>
-<script>
-'use strict';
-const translations={
- en:{navAbout:'About',navSkills:'Expertise',navExperience:'Experience',navEducation:'Education',navContact:'Contact',location:'BASED IN OSLO, NORWAY',role:'Electrical & Automation Engineer',intro:'I work at the intersection of electrical engineering, industrial automation and intelligent energy systems — from SCADA/RTU integration to hardware validation and industrial networks.',viewWork:'Explore my experience ↗',requestCV:'Request my CV ↗',cvNote:'CV available on request. A public-safe downloadable version can be added later.',photo:'Your photo here',aboutLabel:'A LITTLE ABOUT ME',aboutTitle:'Practical engineering, connected thinking.',aboutBody:"I'm an electrical and automation engineer with experience across power-sector automation, electronic hardware development, network infrastructure and green energy. I enjoy testing complex systems, understanding how they work, and turning technical requirements into reliable solutions. I hold an MSc in Green Energy Technology with a Smart Grid focus and a BSc in Electrical and Electronic Engineering.",chipHardware:'Hardware R&D',chipNetworks:'Industrial Networks',chipTesting:'Testing & Validation',skillsLabel:'WHAT I WORK WITH',skillsTitle:'Technical expertise',skillsLead:'Three areas that connect my engineering experience.',skill1Title:'Automation & Control',skill1Body:'SCADA/RTU configuration, PLC-based control, signal mapping, I/O testing, commissioning and industrial communication (IEC 60870-5-104, Modbus, TCP/IP).',skill2Title:'Electrical & Hardware R&D',skill2Body:'AutoCAD Electrical, schematics, instrumentation, hardware testing, technical documentation, BOM/PDM, ECO and ATEX/Ex-related work.',skill3Title:'Data & Networks',skill3Body:'Python, SQL, Power BI, routers and switches, UTP/fiber infrastructure, diagnostics, Wireshark and technical troubleshooting.',experienceLabel:'MY PROFESSIONAL BACKGROUND',experienceTitle:'Professional experience',experienceLead:'Currently working at Netcontrol AS (part of ABB), since June 2026.',job1Area:'June 2026 – Present · Oslo',job1Title:'Automation Engineer',job1Body:'SCADA/RTU configuration, signal verification, I/O testing, technical documentation and commissioning support for energy and industrial applications.',job2Area:'Oct 2025 – May 2026 · Bergen',job2Title:'R&D Engineer — Hardware Development',job2Body:'Electrical drawings in AutoCAD Electrical, hardware validation, fault finding, BOM/PDM updates, engineering change control and ATEX/Ex documentation.',job3Area:'Jun 2025 – Sep 2025 · Oslo',job3Title:'Data Center & IT Infrastructure Engineer',job3Body:'Installed and tested low-voltage electrical systems and communication infrastructure in mission-critical environments. Performed diagnostics, testing and compliance checks to support reliable and safe system operation.',job4Area:'Apr 2024 – Dec 2024 · Oslo',job4Title:'Green Energy Intern',job4Body:'Developed and tested IoT-based sensor and instrumentation systems, supporting prototyping and system integration.',job5Area:'Jan 2025 – May 2025',job5Title:'Service Engineer (Part Time)',job5Body:'Installed and tested communication systems, including power configuration and equipment integration.',job6Area:'Nov 2024 – Feb 2025 · Oslo',job6Title:'Network & Field Engineer (Part Time)',job6Body:'Performed on-site installation, testing, troubleshooting and technical verification of low-voltage systems.',job7Area:'Jun 2021 – Jul 2022 · Bangladesh',job7Title:'Quality Assurance Engineer',job7Body:'Performed field verification of signal strength, grounding and power quality and participated in site audits. Analysed site KPIs and technical findings to support uptime, SLA performance and safety compliance.',educationLabel:'EDUCATION & TRAINING',educationTitle:'Academic foundation',degree1:'MSc — Green Energy Technology (Smart Grid)',school1:'Østfold University College, Norway · Awarded December 2025',degree2:'BSc — Electrical and Electronic Engineering',school2:'Eastern University, Bangladesh',trainingTitle:'Selected training',training1:'Trainor — Ex Basic Course',training2:'Trainor — Offshore electrical installations',training4:'Trainor — Access to electrical installations (valid until Nov 2026)',training3:'Ubuntu Linux (Canonical)',contactTitle:"Let's connect.",contactBody:'Interested in automation, electrical engineering or smart energy systems? Feel free to get in touch.',emailAction:'Send me an email ↗',footer:'Made with care, hosted for free.'},
- no:{navAbout:'Om meg',navSkills:'Kompetanse',navExperience:'Erfaring',navEducation:'Utdanning',navContact:'Kontakt',location:'BASERT I OSLO, NORGE',role:'Elektro- og automasjonsingeniør',intro:'Jeg jobber i skjæringspunktet mellom elektroteknikk, industriell automasjon og smarte energisystemer – fra SCADA/RTU-integrasjon til hardwaretesting og industrielle nettverk.',viewWork:'Se min erfaring ↗',requestCV:'Be om CV ↗',cvNote:'CV sendes på forespørsel. En offentlig, personverntilpasset versjon kan legges til senere.',photo:'Plass til ditt bilde',aboutLabel:'LITT OM MEG',aboutTitle:'Praktisk ingeniørarbeid og helhetlig forståelse.',aboutBody:'Jeg er elektro- og automasjonsingeniør med erfaring fra automasjon i energisektoren, elektronisk hardwareutvikling, nettverksinfrastruktur og grønn energi. Jeg liker å teste komplekse systemer, forstå hvordan de fungerer og omsette tekniske krav til pålitelige løsninger. Jeg har en mastergrad i grønn energiteknologi med fordypning i smarte strømnett og en bachelorgrad i elektro- og elektronikkingeniørfag.',chipHardware:'Hardwareutvikling',chipNetworks:'Industrielle nettverk',chipTesting:'Testing og validering',skillsLabel:'DET JEG JOBBER MED',skillsTitle:'Teknisk kompetanse',skillsLead:'Tre fagområder som binder sammen min ingeniørerfaring.',skill1Title:'Automasjon og kontroll',skill1Body:'SCADA/RTU-konfigurasjon, PLS-baserte styringssystemer, signalmapping, I/O-testing, idriftsettelse og industriell kommunikasjon (IEC 60870-5-104, Modbus, TCP/IP).',skill2Title:'Elektro og hardwareutvikling',skill2Body:'AutoCAD Electrical, elektriske skjemaer, instrumentering, hardwaretesting, teknisk dokumentasjon, BOM/PDM, ECO og arbeid med ATEX/Ex.',skill3Title:'Data og nettverk',skill3Body:'Python, SQL, Power BI, rutere og svitsjer, UTP-/fiberinfrastruktur, diagnostikk, Wireshark og teknisk feilsøking.',experienceLabel:'MIN YRKESBAKGRUNN',experienceTitle:'Yrkeserfaring',experienceLead:'Jeg jobber nå hos Netcontrol AS (del av ABB), siden juni 2026.',job1Area:'Juni 2026 – nå · Oslo',job1Title:'Automasjonsingeniør',job1Body:'SCADA/RTU-konfigurasjon, signalverifisering, I/O-testing, teknisk dokumentasjon og støtte ved idriftsettelse for energi- og industriløsninger.',job2Area:'Okt. 2025 – mai 2026 · Bergen',job2Title:'FoU-ingeniør — Hardwareutvikling',job2Body:'Elektriske tegninger i AutoCAD Electrical, hardwarevalidering, feilsøking, BOM/PDM-oppdateringer, teknisk endringskontroll og ATEX/Ex-dokumentasjon.',job3Area:'Juni 2025 – sep. 2025 · Oslo',job3Title:'Datasenter- og IT-infrastrukturingeniør',job3Body:'Installerte og testet lavspenningsanlegg og kommunikasjonsinfrastruktur i driftskritiske miljøer. Utførte diagnostikk, testing og samsvarskontroller for å støtte pålitelig og sikker drift.',job4Area:'Apr. 2024 – des. 2024 · Oslo',job4Title:'Praktikant innen grønn energi',job4Body:'Utviklet og testet IoT-baserte sensor- og instrumenteringssystemer, med støtte til prototyping og systemintegrasjon.',job5Area:'Jan. 2025 – mai 2025',job5Title:'Serviceingeniør (deltid)',job5Body:'Installerte og testet kommunikasjonssystemer, inkludert strømkonfigurasjon og integrasjon av utstyr.',job6Area:'Nov. 2024 – feb. 2025 · Oslo',job6Title:'Nettverks- og feltingeniør (deltid)',job6Body:'Utførte installasjon, testing, feilsøking og teknisk verifisering av lavspenningssystemer på stedet.',job7Area:'Juni 2021 – juli 2022 · Bangladesh',job7Title:'Kvalitetssikringsingeniør',job7Body:'Utførte feltverifisering av signalstyrke, jording og strømkvalitet og deltok i anleggsrevisjoner. Analyserte KPI-er og tekniske funn for å støtte oppetid, SLA-oppfyllelse og sikkerhet.',educationLabel:'UTDANNING OG KURS',educationTitle:'Faglig grunnlag',degree1:'Master — Grønn energiteknologi (smarte strømnett)',school1:'Høgskolen i Østfold, Norge · Tildelt desember 2025',degree2:'Bachelor — Elektro- og elektronikkingeniørfag',school2:'Eastern University, Bangladesh',trainingTitle:'Utvalgte kurs',training1:'Trainor — Grunnleggende Ex-kurs',training2:'Trainor — Adgang til elektriske anlegg offshore',training4:'Trainor — Adgang til elektriske anlegg (gyldig til nov. 2026)',training3:'Ubuntu Linux (Canonical)',contactTitle:'Ta gjerne kontakt.',contactBody:'Interessert i automasjon, elektroteknikk eller smarte energisystemer? Ta gjerne kontakt.',emailAction:'Send meg en e-post ↗',footer:'Laget med omtanke, publisert gratis.'}
-};
-const languageButton=document.getElementById('languageButton');const menuButton=document.getElementById('menuButton');const navigation=document.getElementById('navigation');let language='en';
-function setLanguage(next){language=next;document.documentElement.lang=next;document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(Object.prototype.hasOwnProperty.call(translations[next],key))el.textContent=translations[next][key]});languageButton.textContent=next==='en'?'NO':'EN';languageButton.setAttribute('aria-label',next==='en'?'Switch language to Norwegian':'Bytt språk til engelsk');document.title=next==='en'?'Rajib Saha — Electrical & Automation Engineer':'Rajib Saha — Elektro- og automasjonsingeniør'}
-languageButton.addEventListener('click',()=>setLanguage(language==='en'?'no':'en'));
-function closeMenu(){navigation.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label',language==='en'?'Open menu':'Åpne meny')}
-menuButton.addEventListener('click',()=>{const open=navigation.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?(language==='en'?'Close menu':'Lukk meny'):(language==='en'?'Open menu':'Åpne meny'))});navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});document.getElementById('year').textContent=new Date().getFullYear();
+<body>
 
-// Lightweight progressive enhancements: no libraries or tracking.
-const progress=document.getElementById('readingProgress');
-const backToTop=document.getElementById('toTop');
-const navLinks=[...document.querySelectorAll('.links a[href^="#"]')];
-let ticking=false;
-function updateScrollUI(){const total=document.documentElement.scrollHeight-innerHeight;progress.style.width=(total>0?Math.min(100,scrollY/total*100):0)+'%';backToTop.classList.toggle('show',scrollY>560);const sections=[...document.querySelectorAll('main section[id]')];let active='';for(const section of sections){if(section.getBoundingClientRect().top<180)active=section.id;}navLinks.forEach(link=>{const selected=link.getAttribute('href')==='#'+active;link.classList.toggle('active',selected);if(selected)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});ticking=false;}
-addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(updateScrollUI);ticking=true;}},{passive:true});updateScrollUI();
-if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
- const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}})},{threshold:.08,rootMargin:'0px 0px -25px 0px'});
- document.querySelectorAll('.card,.job,.edu,.heading').forEach(el=>{el.classList.add('reveal');revealObserver.observe(el);});
-}
+<header>
+  <div class="container nav">
+    <a href="#home" class="brand">RAJIB<span> SAHA.</span></a>
+    <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" id="links">
+      <a href="#about" data-en="About" data-no="Om meg">About</a>
+      <a href="#skills" data-en="Skills" data-no="Kompetanse">Skills</a>
+      <a href="#experience" data-en="Experience" data-no="Erfaring">Experience</a>
+      <a href="#education" data-en="Education" data-no="Utdanning">Education</a>
+      <a href="#training" data-en="Training" data-no="Kurs">Training</a>
+      <a href="#contact" data-en="Contact" data-no="Kontakt">Contact</a>
+      <button class="lang" id="language" aria-label="Switch language">NO</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow" data-en="Electrical & Automation Engineer · Oslo, Norway" data-no="Elektro- og automasjonsingeniør · Oslo, Norge">Electrical & Automation Engineer · Oslo, Norway</div>
+      <h1>Engineering a <span class="accent">smarter</span> future.</h1>
+      <p class="lead" data-en="I'm Rajib Saha, an engineer working across industrial automation, electrical systems, hardware development, telecommunications and smart energy technologies." data-no="Jeg er Rajib Saha, ingeniør med erfaring innen industriell automasjon, elektriske systemer, maskinvareutvikling, telekommunikasjon og smart energiteknologi.">I'm Rajib Saha, an engineer working across industrial automation, electrical systems, hardware development, telecommunications and smart energy technologies.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#experience" data-en="Explore My Experience" data-no="Se min erfaring">Explore My Experience</a>
+        <a class="btn secondary" href="Rajib-Saha-Public-CV.pdf" target="_blank" rel="noopener" download data-en="Download CV ↓" data-no="Last ned CV ↓">Download CV ↓</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>Oslo</strong><small data-en="Based in Norway" data-no="Basert i Norge">Based in Norway</small></div>
+        <div class="stat"><strong>MSc</strong><small data-en="Green Energy Technology" data-no="Grønn energiteknologi">Green Energy Technology</small></div>
+        <div class="stat"><strong>EN / NO</strong><small data-en="Bilingual portfolio" data-no="Tospråklig portefølje">Bilingual portfolio</small></div>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="rajib-photo.jpg" alt="Portrait of Rajib Saha">
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container reveal">
+    <div class="section-head">
+      <div class="eyebrow" data-en="01 / Introduction" data-no="01 / Introduksjon">01 / Introduction</div>
+      <h2 data-en="About Me" data-no="Om meg">About Me</h2>
+    </div>
+    <p class="lead" data-en="I combine electrical engineering fundamentals with practical experience in automation, hardware R&D, data center infrastructure, telecommunications and energy systems. My professional interests include reliable industrial systems, smart grids, field engineering and technology that supports the energy transition." data-no="Jeg kombinerer elektroteknisk kompetanse med praktisk erfaring fra automasjon, maskinvareutvikling, datasenterinfrastruktur, telekommunikasjon og energisystemer. Jeg er spesielt interessert i pålitelige industrielle systemer, smarte strømnett og teknologi som støtter energiomstillingen.">I combine electrical engineering fundamentals with practical experience in automation, hardware R&D, data center infrastructure, telecommunications and energy systems. My professional interests include reliable industrial systems, smart grids, field engineering and technology that supports the energy transition.</p>
+  </div>
+</section>
+
+<section class="alt" id="skills">
+  <div class="container reveal">
+    <div class="section-head">
+      <div class="eyebrow">02 / Expertise</div>
+      <h2 data-en="Technical Skills" data-no="Teknisk kompetanse">Technical Skills</h2>
+    </div>
+    <div class="skills">
+      <span class="skill">Industrial Automation</span>
+      <span class="skill">SCADA & RTU</span>
+      <span class="skill">Electrical Systems</span>
+      <span class="skill">Hardware R&D</span>
+      <span class="skill">Low-Voltage Installations</span>
+      <span class="skill">Telecommunications</span>
+      <span class="skill">Testing & Diagnostics</span>
+      <span class="skill">IoT & Sensors</span>
+      <span class="skill">Smart Grid</span>
+      <span class="skill">Renewable Energy</span>
+      <span class="skill">Power Electronics</span>
+      <span class="skill">Quality Assurance</span>
+      <span class="skill">Technical Documentation</span>
+      <span class="skill">Field Verification</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">03 / Career</div>
+      <h2 data-en="Professional Experience" data-no="Arbeidserfaring">Professional Experience</h2>
+      <p data-en="Engineering experience across Norway and Bangladesh." data-no="Ingeniørerfaring fra Norge og Bangladesh.">Engineering experience across Norway and Bangladesh.</p>
+    </div>
+
+    <div class="timeline">
+
+      <article class="card job reveal">
+        <div class="job-top">
+          <img class="logo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/ABB_logo.svg" alt="ABB logo" onerror="this.style.display='none'">
+          <div>
+            <div class="date">JUN 2026 — PRESENT</div>
+            <h3 data-en="Automation Engineer" data-no="Automasjonsingeniør">Automation Engineer</h3>
+            <div class="company">Netcontrol AS (part of ABB) · Norway</div>
+          </div>
+        </div>
+        <p data-en="Industrial automation and control-system engineering." data-no="Ingeniørarbeid innen industriell automasjon og kontrollsystemer.">Industrial automation and control-system engineering.</p>
+      </article>
+
+      <article class="card job reveal">
+        <div class="job-top">
+          <img class="logo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ceragon_logo.svg" alt="Ceragon logo" onerror="this.style.display='none'">
+          <div>
+            <div class="date">OCT 2025 — MAY 2026</div>
+            <h3 data-en="R&D Hardware Engineer" data-no="FoU-ingeniør – maskinvare">R&D Hardware Engineer</h3>
+            <div class="company">Ceragon Networks AS · Norway</div>
+          </div>
+        </div>
+        <p data-en="Hardware research and development for telecommunications technology." data-no="Forskning og utvikling av maskinvare for telekommunikasjonsteknologi.">Hardware research and development for telecommunications technology.</p>
+      </article>
+
+      <article class="card job reveal">
+        <div class="job-top">
+          <img class="logo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/BNP_Paribas_logo.svg" alt="BNP Paribas logo" onerror="this.style.display='none'">
+          <div>
+            <div class="date">JUN 2025 — SEP 2025</div>
+            <h3 data-en="Data Center & IT Infrastructure Engineer" data-no="Ingeniør – datasenter og IT-infrastruktur">Data Center & IT Infrastructure Engineer</h3>
+            <div class="company">BNP Paribas · Oslo, Norway</div>
+          </div>
+        </div>
+        <ul>
+          <li data-en="Installed and tested low-voltage electrical systems and communication infrastructure in mission-critical environments." data-no="Installerte og testet lavspenningssystemer og kommunikasjonsinfrastruktur i driftskritiske miljøer.">Installed and tested low-voltage electrical systems and communication infrastructure in mission-critical environments.</li>
+          <li data-en="Performed diagnostics, testing and compliance checks to support safe and reliable system operation." data-no="Utførte diagnostikk, testing og samsvarskontroller for å støtte sikker og pålitelig drift.">Performed diagnostics, testing and compliance checks to support safe and reliable system operation.</li>
+        </ul>
+      </article>
+
+      <article class="card job reveal">
+        <div class="job-top">
+          <div class="logo logo-text">BLUE WIRELESS</div>
+          <div>
+            <div class="date">JAN 2025 — MAY 2025</div>
+            <h3 data-en="Service Engineer (Part-Time)" data-no="Serviceingeniør (deltid)">Service Engineer (Part-Time)</h3>
+            <div class="company">Blue Wireless (on behalf of ITOX Ltd) · Worked in Norway</div>
+          </div>
+        </div>
+        <ul>
+          <li data-en="Installed and tested communication systems, including power configuration and equipment integration." data-no="Installerte og testet kommunikasjonssystemer, inkludert strømkonfigurasjon og integrasjon av utstyr.">Installed and tested communication systems, including power configuration and equipment integration.</li>
+        </ul>
+      </article>
+
+      <article class="card job reveal">
+        <div class="job-top">
+          <div class="logo logo-text">AA CONSULTANT GROUP</div>
+          <div>
+            <div class="date">NOV 2024 — FEB 2025</div>
+            <h3 data-en="Network & Field Engineer (Part-Time)" data-no="Nettverks- og feltingeniør (deltid)">Network & Field Engineer (Part-Time)</h3>
+            <div class="company">AA Consultant Group AS · Oslo, Norway</div>
+          </div>
+        </div>
+        <ul>
+          <li data-en="Performed on-site installation, testing, troubleshooting and technical verification of low-voltage systems." data-no="Utførte installasjon, testing, feilsøking og teknisk verifisering av lavspenningssystemer på anlegg.">Performed on-site installation, testing, troubleshooting and technical verification of low-voltage systems.</li>
+        </ul>
+      </article>
+
+      <article class="card job reveal">
+        <div class="job-top">
+          <div class="logo logo-text">I-LABS</div>
+          <div>
+            <div class="date">APR 2024 — DEC 2024</div>
+            <h3 data-en="Green Energy Intern" data-no="Praktikant – grønn energi">Green Energy Intern</h3>
+            <div class="company">I-Labs AS · Start Growth Hub, Oslo</div>
+          </div>
+        </div>
+        <ul>
+          <li data-en="Developed and tested IoT-based sensor and instrumentation systems, supporting prototyping and system integration." data-no="Utviklet og testet IoT-baserte sensor- og instrumenteringssystemer, med arbeid innen prototyping og systemintegrasjon.">Developed and tested IoT-based sensor and instrumentation systems, supporting prototyping and system integration.</li>
+        </ul>
+      </article>
+
+      <article class="card job reveal">
+        <div class="job-top">
+          <div class="logo logo-text">EDOTCO</div>
+          <div>
+            <div class="date">JUN 2021 — JUL 2022</div>
+            <h3 data-en="Quality Assurance Engineer" data-no="Kvalitetssikringsingeniør">Quality Assurance Engineer</h3>
+            <div class="company">Edotco Group (Axiata Group Berhad) · Bangladesh</div>
+          </div>
+        </div>
+        <ul>
+          <li data-en="Performed field verification of signal strength, grounding and power quality and participated in site audits." data-no="Utførte feltkontroll av signalstyrke, jording og strømkvalitet og deltok i anleggsrevisjoner.">Performed field verification of signal strength, grounding and power quality and participated in site audits.</li>
+          <li data-en="Analysed site KPIs and technical findings to support uptime, SLA performance and safety compliance." data-no="Analyserte anleggenes nøkkeltall og tekniske funn for å støtte oppetid, SLA-ytelse og sikkerhet.">Analysed site KPIs and technical findings to support uptime, SLA performance and safety compliance.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">04 / Academic Background</div>
+      <h2 data-en="Education" data-no="Utdanning">Education</h2>
+      <p data-en="Click each degree to explore relevant coursework." data-no="Klikk på hver grad for å se relevante emner.">Click each degree to explore relevant coursework.</p>
+    </div>
+
+    <div class="edu-grid">
+      <article class="card reveal">
+        <span class="pill">JUL 2022 — SEP 2025</span>
+        <h3 style="margin-top:17px" data-en="MSc in Green Energy Technology" data-no="Master i grønn energiteknologi">MSc in Green Energy Technology</h3>
+        <p><strong data-en="Specialisation: Smart Grid" data-no="Spesialisering: Smarte strømnett">Specialisation: Smart Grid</strong></p>
+        <p>Østfold University College (HiØ)<br>Fredrikstad, Norway</p>
+        <p data-en="Degree awarded: December 2025" data-no="Grad tildelt: desember 2025">Degree awarded: December 2025</p>
+        <details>
+          <summary data-en="View relevant courses" data-no="Se relevante emner">View relevant courses</summary>
+          <p>Microgrid Modeling & Design · Renewable Energy Systems · Power Electronics · Experimental and Theoretical Methods · Energy-System Modelling · Analytical Problem-Solving · Development, Innovation and Practical Problem-Solving</p>
+        </details>
+      </article>
+
+      <article class="card reveal">
+        <span class="pill">APR 2016 — NOV 2020</span>
+        <h3 style="margin-top:17px" data-en="BSc in Electrical & Electronic Engineering" data-no="Bachelor i elektro- og elektronikkteknikk">BSc in Electrical & Electronic Engineering</h3>
+        <p><strong data-en="HK-dir approved" data-no="Godkjent av HK-dir">HK-dir approved</strong></p>
+        <p>Eastern University<br>Dhaka, Bangladesh</p>
+        <details>
+          <summary data-en="View relevant courses" data-no="Se relevante emner">View relevant courses</summary>
+          <p>Network Engineering · Control System · Power System · Circuit System · Electronics Design · Signal Processing · Electrical Machine</p>
+        </details>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="training">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">05 / Continuous Learning</div>
+      <h2 data-en="Training & Professional Development" data-no="Kurs og faglig utvikling">Training & Professional Development</h2>
+      <p data-en="Filter training by area. Training access is not the same as a completed certification." data-no="Filtrer kurs etter fagområde. Tilgang til kurs betyr ikke nødvendigvis fullført sertifisering.">Filter training by area. Training access is not the same as a completed certification.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all" data-en="All" data-no="Alle">All</button>
+      <button class="filter" data-filter="electrical" data-en="Electrical & Safety" data-no="Elektro og sikkerhet">Electrical & Safety</button>
+      <button class="filter" data-filter="digital" data-en="Digital & IT" data-no="Digitalt og IT">Digital & IT</button>
+    </div>
+
+    <div class="training-grid">
+      <article class="card training reveal" data-category="electrical">
+        <span class="pill">Electrical & Safety</span>
+        <h3 style="margin-top:14px">Trainor — Electrical Installations</h3>
+        <p data-en="Electrical-installation training access. Access expires in November 2026; course completion is not implied." data-no="Tilgang til opplæring i elektriske installasjoner. Tilgangen utløper i november 2026; dette innebærer ikke at kurset er fullført.">Electrical-installation training access. Access expires in November 2026; course completion is not implied.</p>
+      </article>
+      <article class="card training reveal" data-category="digital">
+        <span class="pill">Digital & IT</span>
+        <h3 style="margin-top:14px" data-en="Digital Engineering Development" data-no="Digital ingeniørfaglig utvikling">Digital Engineering Development</h3>
+        <p data-en="Professional learning interests in IT infrastructure, network systems and engineering tools. Specific certificates can be added after verification." data-no="Faglige læringsområder innen IT-infrastruktur, nettverkssystemer og ingeniørverktøy. Konkrete sertifikater kan legges til etter verifisering.">Professional learning interests in IT infrastructure, network systems and engineering tools. Specific certificates can be added after verification.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container reveal">
+    <div class="eyebrow">06 / Get in Touch</div>
+    <h2 data-en="Let's Connect" data-no="Ta kontakt">Let's Connect</h2>
+    <p data-en="Interested in automation, energy systems, hardware engineering or professional collaboration? Feel free to reach out." data-no="Interessert i automasjon, energisystemer, maskinvareutvikling eller faglig samarbeid? Ta gjerne kontakt.">Interested in automation, energy systems, hardware engineering or professional collaboration? Feel free to reach out.</p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn primary" href="mailto:joyrajibsaha98@gmail.com" data-en="Email Me" data-no="Send e-post">Email Me</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/rajib-saha1998/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="btn secondary" href="Rajib-Saha-Public-CV.pdf" target="_blank" rel="noopener" download data-en="Download CV" data-no="Last ned CV">Download CV</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Rajib Saha · Electrical & Automation Engineer · Oslo, Norway</footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+const langButton=document.getElementById("language");
+let currentLanguage="en";
+
+langButton.addEventListener("click",()=>{
+  currentLanguage=currentLanguage==="en"?"no":"en";
+  document.documentElement.lang=currentLanguage;
+  document.querySelectorAll("[data-en][data-no]").forEach(el=>{
+    el.textContent=el.dataset[currentLanguage];
+  });
+  langButton.textContent=currentLanguage==="en"?"NO":"EN";
+});
+
+const menu=document.getElementById("menu");
+const links=document.getElementById("links");
+menu.addEventListener("click",()=>{
+  const open=links.classList.toggle("open");
+  menu.setAttribute("aria-expanded",String(open));
+});
+links.querySelectorAll("a").forEach(link=>{
+  link.addEventListener("click",()=>{
+    links.classList.remove("open");
+    menu.setAttribute("aria-expanded","false");
+  });
+});
+
+document.querySelectorAll(".filter").forEach(button=>{
+  button.addEventListener("click",()=>{
+    document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
+    button.classList.add("active");
+    const category=button.dataset.filter;
+    document.querySelectorAll(".training").forEach(card=>{
+      card.hidden=category!=="all"&&card.dataset.category!==category;
+    });
+  });
+});
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:0.08});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+const topButton=document.getElementById("top");
+window.addEventListener("scroll",()=>{
+  topButton.style.display=window.scrollY>450?"block":"none";
+},{passive:true});
+topButton.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+
+document.getElementById("year").textContent=new Date().getFullYear();
 </script>
-<!-- PUBLICATION NOTES (not visible on website):
-1. PHOTO: Keep rajib-photo.jpg beside index.html; the existing photo is already linked.
-2. CV: Uploaded CV PDFs include a street address, mobile number and birth date. Do not publish them as-is. The button currently opens an email request, rather than linking to a sensitive PDF.
-3. USER-CONFIRMED: Netcontrol began June 2026 and is current; Ceragon ended May 2026; Trainor access to electrical installations expires November 2026. Netcontrol current employment confirmed by user.
-4. HOSTING: Upload this index.html to the root of a public GitHub Pages repository; no build step, dependencies, paid hosting or external assets needed.
--->
 </body>
 </html>
