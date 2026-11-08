@@ -1,35 +1,52 @@
 # Rajib Saha | Engineering Portfolio
 
-Welcome to my personal engineering portfolio.
+**R&D & Product Development Engineer | Electronics | Automation | Smart Energy**
 
-I am an **Electrical & Automation Engineer based in Oslo, Norway**, with professional experience in industrial automation, SCADA and RTU systems, hardware R&D, electrical infrastructure, telecommunications, and smart energy technologies.
+Welcome to my engineering portfolio. I am an electrical and electronics engineer based in Norway, with professional experience in hardware R&D, industrial automation, telecommunications, electrical infrastructure and renewable energy technology.
+
+I will join **OSO Hotwater AS as a Product Development Engineer on 7 December 2026**.
+
+## About Me
+
+I hold an MSc in Green Energy Technology, specialising in Smart Grid, from Østfold University College, Norway, and a BSc in Electrical and Electronic Engineering from Eastern University, Bangladesh.
+
+My technical interests include electronics prototyping, hardware development, product engineering, automation, testing and system integration.
 
 ## Professional Experience
 
-- **Automation Engineer** — Netcontrol AS (part of ABB) | June 2026 – Present
-- **R&D Hardware Engineer** — Ceragon Networks AS | October 2025 – May 2026
-- **Data Center & IT Infrastructure Engineer** — BNP Paribas | June 2025 – September 2025
-- **Service Engineer (Part-Time)** — Bluewireless | January 2025 – May 2025
-- **Network & Field Engineer (Part-Time)** — AA Consultant Group AS | November 2024 – February 2025
-- **Green Energy Intern** — I-Labs AS | April 2024 – December 2024
-- **Quality Assurance Engineer** — Edotco Group | June 2021 – July 2022
+- **OSO Hotwater AS** — Incoming Product Development Engineer (December 2026)
+- **Netcontrol AS (part of ABB)** — Automation Engineer (June–November 2026)
+- **Ceragon Networks AS** — R&D Hardware Engineer (October 2025–May 2026)
+- **BNP Paribas** — Data Center & IT Infrastructure Engineer (June–September 2025)
+- **Blue Wireless** — Service Engineer, Part-Time (January–May 2025)
+- **AA Consultant Group AS** — Network & Field Engineer, Part-Time (November 2024–February 2025)
+- **I-Labs AS** — Green Energy Intern (April–December 2024)
+- **edotco Group** — Quality Assurance Engineer (June 2021–July 2022)
 
-## Technical Interests
+## Technical Skills
 
-Industrial Automation · SCADA & RTU · Electrical Engineering · Hardware Development · IoT · Telecommunications · Smart Energy
+- Electronics and hardware R&D
+- AutoCAD Electrical and engineering documentation
+- Industrial automation, SCADA and RTU systems
+- Hardware testing, prototyping and troubleshooting
+- Electrical systems and instrumentation
+- IT infrastructure and networking
+- Smart grids and renewable energy systems
 
-## Portfolio Website
+## Projects
 
-Visit my website: https://rajibsahajoy.github.io
+My portfolio includes electronics prototypes, microcontroller experiments, hardware testing and creative engineering collaborations.
 
-The website is responsive, supports English and Norwegian, and is hosted using GitHub Pages.
+I have also collaborated with artist Rajat Mondal on electronics-related technical work connected with his artistic projects.
 
-## Contact
+## Portfolio and Contact
+
+**Portfolio:** [View my engineering portfolio](https://rajibsaha98.github.io)
+
+**LinkedIn:** [linkedin.com/in/rajibsaha1998](https://www.linkedin.com/in/rajibsaha1998/)
 
 **Email:** joyrajibsaha98@gmail.com
 
-**LinkedIn:** https://www.linkedin.com/in/rajib-saha1998/
-
 ---
 
-© 2026 Rajib Saha. All rights reserved.
+© 2026 Rajib Saha
